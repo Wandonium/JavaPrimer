@@ -9,6 +9,7 @@ public class SolveEquation {
         float bf = 4.6f;
         System.out.println("(a+b)squared int = " + int_aPlus_bSquared(a, b));
         System.out.println("(a+b)squared float = " + float_aPlus_bSquared(af, bf));
+        System.out.println("mixed version = " + mixedVersion(25, 42.159f));
     }
 
     public static int int_aPlus_bSquared(int a, int b) {
@@ -23,5 +24,11 @@ public class SolveEquation {
         float bSquared = b * b;
         float mid = 2 * a * b;
         return aSquared + bSquared + mid;
+    }
+
+    public static double mixedVersion(int a, float b) {
+        // maintain precision in float value by returning
+        // double value;
+        return a*a + 2*(a * b) + b*b;
     }
 }
