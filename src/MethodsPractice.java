@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class MethodsPractice {
 
+    // practicing use of methods in Java.
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter length of rectangle: ");
