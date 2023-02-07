@@ -17,7 +17,7 @@ public class MethodsPractice {
         System.out.println("Area of rectangle of length 14 and width 14 is: " +
                 area(14));
         System.out.println("Is 7 a prime number? " + isPrime(7));
-        System.out.println("Is 7.0 a prime number? " + isPrime(7.0f));
+        System.out.println("Is 7.5 a prime number? " + isPrime(7.0f));
     }
 
     public static double area(double length, double width) {
