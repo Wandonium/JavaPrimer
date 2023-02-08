@@ -4,7 +4,7 @@ public class Reptile extends Animal{
 
     private boolean drySkin;
     private boolean backbone;
-    private String eggType = "soft-shelled";
+    private String eggType = "Soft-Shelled";
 
     public Reptile(double height, double weight, String type, String bloodType, boolean drySkin, boolean backbone) {
         super(height, weight, type, bloodType);
