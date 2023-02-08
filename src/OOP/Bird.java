@@ -29,4 +29,12 @@ public class Bird extends Animal {
     public void setCanFly(boolean canFly) {
         this.canFly = canFly;
     }
+
+    @Override
+    public String toString() {
+        return "Bird{" +
+                "hasFeathers=" + hasFeathers +
+                ", canFly=" + canFly +
+                '}';
+    }
 }
