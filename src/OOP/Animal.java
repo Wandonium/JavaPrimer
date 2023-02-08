@@ -49,5 +49,13 @@ public class Animal {
         this.bloodType = bloodType;
     }
 
-
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "height=" + height +
+                ", weight=" + weight +
+                ", type='" + type + '\'' +
+                ", bloodType='" + bloodType + '\'' +
+                '}';
+    }
 }
