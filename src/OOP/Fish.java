@@ -29,4 +29,12 @@ public class Fish extends Animal {
     public void setHasGills(boolean hasGills) {
         this.hasGills = hasGills;
     }
+
+    @Override
+    public String toString() {
+        return "Fish{" +
+                "livesInWater=" + livesInWater +
+                ", hasGills=" + hasGills +
+                '}';
+    }
 }

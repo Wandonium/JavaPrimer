@@ -30,4 +30,13 @@ public class Reptile extends Animal{
     public void setBackbone(boolean backbone) {
         this.backbone = backbone;
     }
+
+    @Override
+    public String toString() {
+        return "Reptile{" +
+                "drySkin=" + drySkin +
+                ", backbone=" + backbone +
+                ", eggType='" + eggType + '\'' +
+                '}';
+    }
 }
