@@ -2,7 +2,7 @@ package OOP.composition;
 
 public class Laptop {
 
-    private String screen;
+    private float screen;
     private Processor processor;
     private String ram;
     private String hardDrive;
@@ -10,7 +10,7 @@ public class Laptop {
     private String opticalDrive;
     private String keyboard;
 
-    public Laptop(String screen, Processor processor, String ram, String hardDrive, GraphicsCard graphicsCard,
+    public Laptop(float screen, Processor processor, String ram, String hardDrive, GraphicsCard graphicsCard,
                   String opticalDrive, String keyboard) {
         this.screen = screen;
         this.processor = processor;
@@ -24,11 +24,11 @@ public class Laptop {
     public Laptop() {
     }
 
-    public String getScreen() {
+    public float getScreen() {
         return screen;
     }
 
-    public void setScreen(String screen) {
+    public void setScreen(float screen) {
         this.screen = screen;
     }
 
@@ -78,5 +78,18 @@ public class Laptop {
 
     public void setKeyboard(String keyboard) {
         this.keyboard = keyboard;
+    }
+
+    @Override
+    public String toString() {
+        return "Laptop{" +
+                "screen=" + screen +
+                ", processor=" + processor +
+                ", ram='" + ram + '\'' +
+                ", hardDrive='" + hardDrive + '\'' +
+                ", graphicsCard=" + graphicsCard +
+                ", opticalDrive='" + opticalDrive + '\'' +
+                ", keyboard='" + keyboard + '\'' +
+                '}';
     }
 }
