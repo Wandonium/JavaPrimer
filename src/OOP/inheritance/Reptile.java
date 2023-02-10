@@ -1,4 +1,4 @@
-package OOP;
+package OOP.inheritance;
 
 public class Reptile extends Animal{
 
