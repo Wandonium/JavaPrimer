@@ -30,5 +30,6 @@ public class Demo {
                 "backlit"
         );
         System.out.println("Laptop: " + laptop);
+        System.out.println("gaming mode frequency: " + laptop.gamingMode());
     }
 }

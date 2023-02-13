@@ -92,4 +92,9 @@ public class Laptop {
                 ", keyboard='" + keyboard + '\'' +
                 '}';
     }
+
+    public String gamingMode() {
+        this.processor.setFrequency(this.processor.getMaxFrequency());
+        return this.processor.getFrequency();
+    }
 }
