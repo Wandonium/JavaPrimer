@@ -7,6 +7,10 @@ public class Door {
         lock = new Lock(true);
     }
 
+    public Lock getLock() {
+        return lock;
+    }
+
     public void shopStatus() {
         if(lock.isLock()) {
             System.out.println("Shop is closed! Come back later.");
