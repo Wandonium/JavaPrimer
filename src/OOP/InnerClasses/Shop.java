@@ -22,7 +22,16 @@ public class Shop {
         }
 
         Door3 door3 = new Door3();
-        System.out.println(door3.getLock().isUnLocked("test"));
-        System.out.println(door3.getLock().isUnLocked("qwerty"));
+        //System.out.println(door3.getLock().isUnLocked("test"));
+        //System.out.println(door3.getLock().isUnLocked("qwerty"));
+        System.out.println("Door3:");
+        for(String arg: args) {
+            if(new Door2().isLocked(arg)) {
+                System.out.println("Shop is closed! Come back later.");
+            } else {
+                System.out.println("Welcome, we are open!");
+            }
+            System.out.println("arg: " + arg);
+        }
     }
 }
