@@ -101,6 +101,7 @@
     <configuration name="Shop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OOP.InnerClasses.Shop" />
       <module name="JavaPrimer" />
+      <option name="PROGRAM_PARAMETERS" value="qwerty" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="OOP.InnerClasses.*" />
@@ -111,6 +112,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.AnimalDemo" />
+      <item itemvalue="Application.Demo" />
+      <item itemvalue="Application.OOP.abstractClasses.Demo" />
+      <item itemvalue="Application.OOP.interfaces.Demo" />
+      <item itemvalue="Application.Shop" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Shop" />
