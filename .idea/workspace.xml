@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/OOP/abstractClasses/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP/abstractClasses/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OOP/abstractClasses/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP/abstractClasses/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOP/InnerClasses/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP/InnerClasses/Shop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,7 +45,7 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OOP.abstractClasses.Demo">
+  <component name="RunManager" selected="Application.Shop">
     <configuration name="AnimalDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OOP.inheritance.AnimalDemo" />
       <module name="JavaPrimer" />
@@ -69,13 +68,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MethodsPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MethodsPractice" />
-      <module name="JavaPrimer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,13 +98,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Shop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OOP.InnerClasses.Shop" />
+      <module name="JavaPrimer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OOP.InnerClasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Shop" />
         <item itemvalue="Application.OOP.abstractClasses.Demo" />
         <item itemvalue="Application.OOP.interfaces.Demo" />
         <item itemvalue="Application.Demo" />
         <item itemvalue="Application.AnimalDemo" />
-        <item itemvalue="Application.MethodsPractice" />
       </list>
     </recent_temporary>
   </component>
