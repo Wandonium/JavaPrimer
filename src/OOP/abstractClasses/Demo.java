@@ -6,9 +6,13 @@ public class Demo {
         Person john = new Vegan();
         john.speak();
         john.eat();
+        john.breathe();
+        john.message();
         System.out.println("*********************");
         Person mia = new NonVegan();
         mia.speak();
         mia.eat();
+        mia.breathe();
+        mia.message();
     }
 }

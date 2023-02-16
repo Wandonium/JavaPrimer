@@ -7,12 +7,12 @@ public abstract class Person implements IsAlive, LiveLife {
 
     @Override
     public void breathe() {
-
+        System.out.println("Be alive; remain living.");
     }
 
     @Override
     public void message() {
-
+        System.out.println("Life is a journey, keep moving and meet new people.");
     }
 
     public abstract void eat();
