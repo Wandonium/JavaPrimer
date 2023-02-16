@@ -20,5 +20,8 @@ public class Shop {
             }
             System.out.println("arg: " + arg);
         }
+
+        Door3 door3 = new Door3();
+        door3.getLock().test();
     }
 }
