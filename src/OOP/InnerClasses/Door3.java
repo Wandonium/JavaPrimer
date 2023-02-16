@@ -2,10 +2,6 @@ package OOP.InnerClasses;
 
 abstract class Lock {
     public abstract boolean isUnLocked(String keycode);
-
-    public void test() {
-        System.out.println("test");
-    }
 }
 public class Door3 {
     Lock lock = new Lock() {

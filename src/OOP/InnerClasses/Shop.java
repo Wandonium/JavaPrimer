@@ -22,6 +22,7 @@ public class Shop {
         }
 
         Door3 door3 = new Door3();
-        door3.getLock().test();
+        System.out.println(door3.getLock().isUnLocked("test"));
+        System.out.println(door3.getLock().isUnLocked("qwerty"));
     }
 }
