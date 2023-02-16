@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/OOP/InnerClasses/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP/InnerClasses/Shop.java" afterDir="false" />
-    </list>
+    <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +99,7 @@
     <configuration name="Shop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OOP.InnerClasses.Shop" />
       <module name="JavaPrimer" />
-      <option name="PROGRAM_PARAMETERS" value="qwerty" />
+      <option name="PROGRAM_PARAMETERS" value="qwerty test 2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="OOP.InnerClasses.*" />

@@ -16,5 +16,8 @@ public class Shop {
         } else {
             System.out.println("Welcome, we are open!");
         }
+        for(String arg: args) {
+            System.out.println("arg: " + arg);
+        }
     }
 }
