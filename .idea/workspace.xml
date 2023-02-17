@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/MethodsPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MethodsPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOP/StaticInnerClasses/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP/StaticInnerClasses/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +45,13 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MethodsPractice">
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OOP.composition.Demo" />
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OOP.StaticInnerClasses.App" />
       <module name="JavaPrimer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="OOP.composition.*" />
+          <option name="PATTERN" value="OOP.StaticInnerClasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,19 +107,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.App" />
       <item itemvalue="Application.MethodsPractice" />
-      <item itemvalue="Application.Demo" />
       <item itemvalue="Application.OOP.abstractClasses.Demo" />
       <item itemvalue="Application.OOP.interfaces.Demo" />
       <item itemvalue="Application.Shop" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.MethodsPractice" />
         <item itemvalue="Application.Shop" />
         <item itemvalue="Application.OOP.abstractClasses.Demo" />
         <item itemvalue="Application.OOP.interfaces.Demo" />
-        <item itemvalue="Application.Demo" />
       </list>
     </recent_temporary>
   </component>
