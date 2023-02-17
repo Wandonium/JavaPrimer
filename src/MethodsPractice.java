@@ -9,6 +9,7 @@ public class MethodsPractice {
         double length = scanner.nextDouble();
         System.out.print("Enter width of rectangle: ");
         double width = scanner.nextDouble();
+        scanner.close();
         System.out.println("Area of rectangle is: " + area(length, width));
         System.out.println("Area of rectangle of length 14.25 and width 10.65 is: " +
                 area(14.25d, 10.65d));
