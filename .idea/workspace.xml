@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/OOP/StaticInnerClasses/Outer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP/StaticInnerClasses/Outer.java" afterDir="false" />
-    </list>
+    <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +43,7 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.ThrowVsThrows">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OOP.StaticInnerClasses.App" />
       <module name="JavaPrimer" />
@@ -79,19 +77,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OOP.interfaces.Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OOP.interfaces.Demo" />
-      <module name="JavaPrimer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="OOP.interfaces.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Shop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OOP.InnerClasses.Shop" />
       <module name="JavaPrimer" />
@@ -106,20 +91,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThrowVsThrows" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThrowVsThrows" />
+      <module name="JavaPrimer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.ThrowVsThrows" />
       <item itemvalue="Application.App" />
       <item itemvalue="Application.MethodsPractice" />
       <item itemvalue="Application.OOP.abstractClasses.Demo" />
-      <item itemvalue="Application.OOP.interfaces.Demo" />
       <item itemvalue="Application.Shop" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThrowVsThrows" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.MethodsPractice" />
         <item itemvalue="Application.Shop" />
         <item itemvalue="Application.OOP.abstractClasses.Demo" />
-        <item itemvalue="Application.OOP.interfaces.Demo" />
       </list>
     </recent_temporary>
   </component>
