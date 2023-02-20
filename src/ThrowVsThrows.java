@@ -24,6 +24,12 @@ public class ThrowVsThrows {
             throw new RuntimeException(e);
         } catch (Exception e) {
             throw new RuntimeException(e);
+        } finally {
+            String st1 = "Hello!";
+            String st2 = "Hello!";
+            System.out.println("st1 == st2: " + (st1==st2));
+            String st3 = new String("Hello!");
+            System.out.println("st2 == st3: " + (st2==st3));
         }
     }
 
