@@ -20,7 +20,7 @@ public class Iterators {
 
         // illustrating use of Comparable interface, and it's
         // compareTo method to sort lists
-        List names = new LinkedList<Names>();
+        List names = new LinkedList<>();
         names.add(new Names("Matthew"));
         names.add(new Names("Mark"));
         names.add(new Names("Peter"));
