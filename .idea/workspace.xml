@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/CallByValueOrReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallByValueOrReference.java" afterDir="false" />
-    </list>
+    <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +43,7 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CallByValueOrReference">
+  <component name="RunManager" selected="Application.StacksInJava">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OOP.StaticInnerClasses.App" />
       <module name="JavaPrimer" />
@@ -73,16 +71,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Shop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OOP.InnerClasses.Shop" />
+    <configuration name="StacksInJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StacksInJava" />
       <module name="JavaPrimer" />
-      <option name="PROGRAM_PARAMETERS" value="qwerty test 2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="OOP.InnerClasses.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,18 +87,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.CallByValueOrReference" />
+      <item itemvalue="Application.StacksInJava" />
       <item itemvalue="Application.ThrowVsThrows" />
       <item itemvalue="Application.App" />
       <item itemvalue="Application.MethodsPractice" />
-      <item itemvalue="Application.Shop" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StacksInJava" />
         <item itemvalue="Application.CallByValueOrReference" />
         <item itemvalue="Application.ThrowVsThrows" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.MethodsPractice" />
-        <item itemvalue="Application.Shop" />
       </list>
     </recent_temporary>
   </component>
