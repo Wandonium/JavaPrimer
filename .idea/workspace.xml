@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/StacksInJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StacksInJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Iterators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Iterators.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StacksInJava">
+  <component name="RunManager" selected="Application.Iterators">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OOP.StaticInnerClasses.App" />
       <module name="JavaPrimer" />
@@ -66,8 +66,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MethodsPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MethodsPractice" />
+    <configuration name="Iterators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Iterators" />
       <module name="JavaPrimer" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -89,18 +89,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.CallByValueOrReference" />
+      <item itemvalue="Application.Iterators" />
       <item itemvalue="Application.StacksInJava" />
       <item itemvalue="Application.ThrowVsThrows" />
       <item itemvalue="Application.App" />
-      <item itemvalue="Application.MethodsPractice" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Iterators" />
         <item itemvalue="Application.StacksInJava" />
         <item itemvalue="Application.CallByValueOrReference" />
         <item itemvalue="Application.ThrowVsThrows" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.MethodsPractice" />
       </list>
     </recent_temporary>
   </component>
