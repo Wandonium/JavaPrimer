@@ -17,6 +17,15 @@ public class Iterators {
         // reversing list
         Collections.reverse(countries);
         System.out.println("Reversed countries: " + countries);
+
+        // illustrating use of Comparable interface, and it's
+        // compareTo method to sort lists
+        List names = new LinkedList<Names>();
+        names.add(new Names("Matthew"));
+        names.add(new Names("Mark"));
+        names.add(new Names("Peter"));
+        Collections.sort(names);
+        System.out.println("Sorted by country name length: " + names);
     }
 
     public static void printList(List<String> list) {
@@ -33,6 +42,28 @@ public class Iterators {
         }
         while(iterator.hasPrevious()) {
             System.out.println("Element: " + iterator.previous());
+        }
+    }
+
+    static class Names implements Comparable<Names> {
+        private String name;
+
+        public Names(String name) {
+            this.name = name;
+        }
+
+        @Override
+        public int compareTo(Names o) {
+            if(name.length() == o.name.length())
+                return 0;
+            else if(name.length() < o.name.length())
+                return -1;
+            else return 1;
+        }
+
+        @Override
+        public String toString() {
+            return name;
         }
     }
 }
