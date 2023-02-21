@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ThrowVsThrows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThrowVsThrows.java" afterDir="false" />
-    </list>
+    <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +43,7 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ThrowVsThrows">
+  <component name="RunManager" selected="Application.CallByValueOrReference">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OOP.StaticInnerClasses.App" />
       <module name="JavaPrimer" />
@@ -59,22 +57,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MethodsPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MethodsPractice" />
+    <configuration name="CallByValueOrReference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CallByValueOrReference" />
       <module name="JavaPrimer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OOP.abstractClasses.Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OOP.abstractClasses.Demo" />
+    <configuration name="MethodsPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MethodsPractice" />
       <module name="JavaPrimer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="OOP.abstractClasses.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,19 +93,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.CallByValueOrReference" />
       <item itemvalue="Application.ThrowVsThrows" />
       <item itemvalue="Application.App" />
       <item itemvalue="Application.MethodsPractice" />
-      <item itemvalue="Application.OOP.abstractClasses.Demo" />
       <item itemvalue="Application.Shop" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CallByValueOrReference" />
         <item itemvalue="Application.ThrowVsThrows" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.MethodsPractice" />
         <item itemvalue="Application.Shop" />
-        <item itemvalue="Application.OOP.abstractClasses.Demo" />
       </list>
     </recent_temporary>
   </component>
