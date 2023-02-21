@@ -1,7 +1,4 @@
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class Iterators {
 
@@ -13,6 +10,13 @@ public class Iterators {
         printList(countries);
         System.out.println("**********************");
         printListBackwards(countries);
+        // sorting list in the default order i.e ascending
+        // alphabetic for strings, numerical for ints and floats
+        countries.sort(null);
+        System.out.println("Sorted countries: " + countries);
+        // reversing list
+        Collections.reverse(countries);
+        System.out.println("Reversed countries: " + countries);
     }
 
     public static void printList(List<String> list) {
