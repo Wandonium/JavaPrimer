@@ -15,5 +15,14 @@ public class StacksInJava {
         System.out.println("pop: " + demo.pop());
         // stack after pop operation
         System.out.println("after pop: " + demo);
+
+        if(demo.isEmpty()) {
+            System.out.println("stack is empty");
+        } else {
+            System.out.println("search for 3 in stack: "
+                    +demo.search(3));
+            System.out.println("search for 100 in stack: "
+                    +demo.search(100));
+        }
     }
 }
