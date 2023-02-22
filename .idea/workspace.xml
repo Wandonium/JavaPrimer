@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Generics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Generics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComparableInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComparableInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +45,16 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Generics">
+  <component name="RunManager" selected="Application.ComparableInterface">
     <configuration name="CallByValueOrReference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CallByValueOrReference" />
+      <module name="JavaPrimer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComparableInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ComparableInterface" />
       <module name="JavaPrimer" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -74,27 +81,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThrowVsThrows" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ThrowVsThrows" />
-      <module name="JavaPrimer" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.CallByValueOrReference" />
+      <item itemvalue="Application.ComparableInterface" />
       <item itemvalue="Application.Generics" />
       <item itemvalue="Application.Iterators" />
       <item itemvalue="Application.StacksInJava" />
-      <item itemvalue="Application.ThrowVsThrows" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ComparableInterface" />
         <item itemvalue="Application.Generics" />
         <item itemvalue="Application.Iterators" />
         <item itemvalue="Application.StacksInJava" />
         <item itemvalue="Application.CallByValueOrReference" />
-        <item itemvalue="Application.ThrowVsThrows" />
       </list>
     </recent_temporary>
   </component>
