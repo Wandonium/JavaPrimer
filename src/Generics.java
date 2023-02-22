@@ -3,6 +3,15 @@ import java.util.List;
 
 public class Generics {
 
+    /*
+    *   Java naming conventions when using Generics:
+    *   T - Type
+    *   E - Element
+    *   K - Key
+    *   N - Number
+    *   V - Value
+     */
+
     public static void main(String[] args) {
         // use of the Data class with type casting
         // no use of generics
@@ -24,6 +33,36 @@ public class Generics {
         list.add(new ListData('%'));
         list.add(new ListData(5.0f));
         System.out.println("list: " + list);
+
+        // using generics to create a custom Map class
+        KeyVal<Integer, String> keyVal = new KeyVal<>(1, "Text");
+        System.out.println("keyVal: " + keyVal);
+    }
+
+    static class KeyVal<K,V> {
+        private K key;
+        private V value;
+
+        public KeyVal(K key, V value) {
+            this.key = key;
+            this.value = value;
+        }
+
+        public K getKey() {
+            return key;
+        }
+
+        public V getValue() {
+            return value;
+        }
+
+        @Override
+        public String toString() {
+            return "KeyVal{" +
+                    "key=" + key +
+                    ", value=" + value +
+                    '}';
+        }
     }
 
     static class ListData<T> {
