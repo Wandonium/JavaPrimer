@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -37,6 +38,36 @@ public class Generics {
         // using generics to create a custom Map class
         KeyVal<Integer, String> keyVal = new KeyVal<>(1, "Text");
         System.out.println("keyVal: " + keyVal);
+
+        // using generics as method parameters
+        keyVal.display("test", "text");
+        keyVal.display('t', "text");
+        keyVal.display(1, "text");
+
+        // using generic methods
+        System.out.println("Generic methods..............");
+        List<Integer> intList = new ArrayList<>();
+        intList.add(1);
+        intList.add(2);
+        intList.add(3);
+        new Generics().printData(intList);
+
+        String[] arr = {"one", "two", "three"};
+        new Generics().printData(arr);
+    }
+
+    // Generic method that uses Lists
+    public <E>  void printData(List<E> list) {
+        for(E element: list) {
+            System.out.println("List Element: " + element);
+        }
+    }
+
+    // Generic method that uses Arrays
+    public<E> void printData(E[] arr) {
+        for(E element: arr) {
+            System.out.println("Array element: " + element);
+        }
     }
 
     static class KeyVal<K,V> {
@@ -62,6 +93,11 @@ public class Generics {
                     "key=" + key +
                     ", value=" + value +
                     '}';
+        }
+
+        public <E, N> void display(E element, N number) {
+            System.out.println("Element: " + element);
+            System.out.println("Number: " + number);
         }
     }
 
