@@ -1,3 +1,6 @@
+import java.util.LinkedList;
+import java.util.List;
+
 public class Generics {
 
     public static void main(String[] args) {
@@ -11,6 +14,35 @@ public class Generics {
         GenericClass<String> genericClass = new GenericClass<String>("Some data");
         String genericData = genericClass.getData();
         System.out.println("genericData: " + genericData);
+
+        // using generics to create a list with elements
+        // of multiple data types
+        List<ListData> list = new LinkedList<>();
+        list.add(new ListData("Some text"));
+        list.add(new ListData(1.0));
+        list.add(new ListData(1));
+        list.add(new ListData('%'));
+        list.add(new ListData(5.0f));
+        System.out.println("list: " + list);
+    }
+
+    static class ListData<T> {
+        private T var;
+
+        public ListData(T var) {
+            this.var = var;
+        }
+
+        public T getVar() {
+            return var;
+        }
+
+        @Override
+        public String toString() {
+            return "ListData{" +
+                    "var=" + var +
+                    '}';
+        }
     }
 
     static class GenericClass<T> {
