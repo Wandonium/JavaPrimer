@@ -54,6 +54,15 @@ public class Generics {
 
         String[] arr = {"one", "two", "three"};
         new Generics().printData(arr);
+
+        // making use of bounded type parameter
+        KeyVal keyVal1 = new KeyVal(1, "value");
+        // this causes an error coz we are expecting only
+        // values of type Number
+        //keyVal1.display2("element", "value");
+        // this passes without compile errors
+        keyVal1.display2("element", 2);
+        keyVal1.display2("element", 2.25F);
     }
 
     // Generic method that uses Lists
@@ -96,6 +105,12 @@ public class Generics {
         }
 
         public <E, N> void display(E element, N number) {
+            System.out.println("Element: " + element);
+            System.out.println("Number: " + number);
+        }
+
+        // Bound type parameter to Number type only
+        public <E, N extends Number> void display2(E element, N number) {
             System.out.println("Element: " + element);
             System.out.println("Number: " + number);
         }
