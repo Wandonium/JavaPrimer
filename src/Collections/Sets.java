@@ -72,7 +72,14 @@ public class Sets {
                 } else return 0;
             }
         };
-        Set<Data<Integer, String>> set = new TreeSet<>(compareKey);
+        Comparator<Data<Integer, String>> compareKey2 = (Data<Integer, String> o1, Data<Integer, String> o2) -> {
+            if(o1.getKey() > o2.getKey()) {
+                return 1;
+            } else if(o1.getKey() < o2.getKey()) {
+                return -1;
+            } else return 0;
+        };
+        Set<Data<Integer, String>> set = new TreeSet<>(compareKey2);
         set.add(new Data(3, "three"));
         set.add(new Data(1, "one"));
         set.add(new Data(2, "two"));
