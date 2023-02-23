@@ -76,6 +76,8 @@ public class Sets {
         set.add(new Data(3, "three"));
         set.add(new Data(1, "one"));
         set.add(new Data(2, "two"));
+        set.add(new Data(3, "three"));
+        // Note that the value new Data(3, "three") will not be repeated:
         System.out.println("treeSet: " + set);
     }
 
