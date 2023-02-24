@@ -23,5 +23,15 @@ public class Queues {
         // remove first element in queue i.e LIFO
         listQueue.remove();
         System.out.println("listQueue after remove operation: " + listQueue);
+
+        Queue<Integer> emptyQueue = new LinkedBlockingQueue<>();
+        // Causes an exception. Cannot remove from an empty queue.
+        try {
+            emptyQueue.remove();
+        } catch (Exception e) {
+            System.out.println("Queue is empty");
+        }
+        // Does not cause an exception. Returns null if queue is empty.
+        System.out.println("poll queue: " + emptyQueue.poll());
     }
 }
