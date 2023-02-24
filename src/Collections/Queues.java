@@ -35,6 +35,15 @@ public class Queues {
         // Does not cause an exception. Returns null if queue is empty.
         System.out.println("poll empty queue: " + emptyQueue.poll());
 
+        // Causes an exception. Cannot get first element of an empty queue.
+        try {
+            emptyQueue.element();
+        } catch (Exception e) {
+            System.out.println("No element in queue");
+        }
+        // Does not cause an exception. Returns null if queue is empty.
+        System.out.println("peek empty queue: " + emptyQueue.peek());
+
         Queue<Integer> fullArrQueue = new ArrayBlockingQueue<>(2);
         fullArrQueue.add(1);
         fullArrQueue.add(2);
