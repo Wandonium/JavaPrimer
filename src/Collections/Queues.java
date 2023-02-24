@@ -1,5 +1,6 @@
 package Collections;
 
+import java.sql.SQLOutput;
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -32,6 +33,18 @@ public class Queues {
             System.out.println("Queue is empty");
         }
         // Does not cause an exception. Returns null if queue is empty.
-        System.out.println("poll queue: " + emptyQueue.poll());
+        System.out.println("poll empty queue: " + emptyQueue.poll());
+
+        Queue<Integer> fullArrQueue = new ArrayBlockingQueue<>(2);
+        fullArrQueue.add(1);
+        fullArrQueue.add(2);
+        // Causes an exception. Cannot add to a full ArrayBlockingQueue
+        try {
+            fullArrQueue.add(3);
+        } catch(Exception e) {
+            System.out.println("Queue is full!");
+        }
+        // Does not cause an exception. Returns false if queue is full.
+        System.out.println("offer into full array based queue: " + fullArrQueue.offer(3));
     }
 }
