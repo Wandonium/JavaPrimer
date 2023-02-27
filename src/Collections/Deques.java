@@ -18,5 +18,9 @@ public class Deques {
         // removing from the tail of the deque instead of the head:
         deque.removeLast();
         System.out.println("Remove last deque: " + deque);
+
+        // We can make use of the offer(), peek() and poll() methods in
+        // Deques just like in Queues. Check out the following ref to learn more;
+        // Ref: https://docs.oracle.com/javase/7/docs/api/java/util/Deque.html
     }
 }
