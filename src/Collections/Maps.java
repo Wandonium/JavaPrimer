@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class Maps {
@@ -19,6 +20,13 @@ public class Maps {
         // better for-each loop:
         for(Integer key: map.keySet()) {
             System.out.println("key: " + key + " value: " + map.get(key));
+        }
+        System.out.println("***********************************************************");
+        // looping thru map using iterator
+        Iterator<Map.Entry<Integer, String>> entry = map.entrySet().iterator();
+        while(entry.hasNext()) {
+            Map.Entry<Integer, String> temp = entry.next();
+            System.out.println("key: " + temp.getKey() + " value: " + temp.getValue());
         }
     }
 }
