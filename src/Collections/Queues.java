@@ -12,16 +12,16 @@ public class Queues {
         // length/size variable
         Queue<Integer> arrayQueue = new ArrayBlockingQueue<>(5);
         for(int i=0; i<5; i++) {
-            // add element to the end of the queue i.e LIFO
+            // add element to the end of the queue i.e FIFO
             listQueue.add(i);
             arrayQueue.add(i);
         }
         System.out.println("listQueue: " + listQueue);
         System.out.println("arrayQueue: " + arrayQueue);
 
-        // get first element in queue i.e LIFO
+        // get first element in queue i.e FIFO
         System.out.println("First element: " + listQueue.element());
-        // remove first element in queue i.e LIFO
+        // remove first element in queue i.e FIFO
         listQueue.remove();
         System.out.println("listQueue after remove operation: " + listQueue);
 
