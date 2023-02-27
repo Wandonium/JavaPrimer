@@ -15,5 +15,10 @@ public class Maps {
         for(Map.Entry<Integer, String> entry: map.entrySet()) {
             System.out.println("key: " + entry.getKey() + " value: " + entry.getValue());
         }
+        System.out.println("***********************************************************");
+        // better for-each loop:
+        for(Integer key: map.keySet()) {
+            System.out.println("key: " + key + " value: " + map.get(key));
+        }
     }
 }
