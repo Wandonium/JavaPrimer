@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Collections/Queues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/Queues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Queues">
+  <component name="RunManager" selected="Application.Deques">
     <configuration name="ComparableInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ComparableInterface" />
       <module name="JavaPrimer" />
@@ -53,15 +53,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Generics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Generics" />
+    <configuration name="Deques" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collections.Deques" />
       <module name="JavaPrimer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Iterators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Iterators" />
+    <configuration name="Generics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Generics" />
       <module name="JavaPrimer" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,19 +100,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Deques" />
       <item itemvalue="Application.Queues" />
       <item itemvalue="Application.ComparableInterface" />
       <item itemvalue="Application.Generics" />
-      <item itemvalue="Application.Iterators" />
       <item itemvalue="Application.Sets" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Deques" />
         <item itemvalue="Application.Queues" />
         <item itemvalue="Application.Sets" />
         <item itemvalue="Application.ComparableInterface" />
         <item itemvalue="Application.Generics" />
-        <item itemvalue="Application.Iterators" />
       </list>
     </recent_temporary>
   </component>
