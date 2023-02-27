@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Collections/Deques.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/Deques.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/Queues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/Queues.java" afterDir="false" />
-    </list>
+    <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +43,7 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Deques">
+  <component name="RunManager" selected="Application.Maps">
     <configuration name="ComparableInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ComparableInterface" />
       <module name="JavaPrimer" />
@@ -67,9 +64,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Generics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Generics" />
+    <configuration name="Maps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collections.Maps" />
       <module name="JavaPrimer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,18 +105,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Deques" />
+      <item itemvalue="Application.Maps" />
       <item itemvalue="Application.Queues" />
       <item itemvalue="Application.ComparableInterface" />
-      <item itemvalue="Application.Generics" />
       <item itemvalue="Application.Sets" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Maps" />
         <item itemvalue="Application.Deques" />
         <item itemvalue="Application.Queues" />
         <item itemvalue="Application.Sets" />
         <item itemvalue="Application.ComparableInterface" />
-        <item itemvalue="Application.Generics" />
       </list>
     </recent_temporary>
   </component>
