@@ -1,9 +1,6 @@
 package Collections;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Maps {
     public static void main(String[] args) {
@@ -59,6 +56,13 @@ public class Maps {
         for(Code key: map.keySet()) {
             System.out.println("key: " + key + " value: " + map.get(key));
         }
+
+        Code code1 = new Code("S01", "L01");
+        Code code2 = new Code("S01", "L01");
+        // makes use of the hashCode() method
+        System.out.println(code1 == code2);
+        // makes use of the equals() method
+        System.out.println(code1.equals(code2));
     }
 
     static class Code implements Comparable<Code> {
@@ -76,6 +80,19 @@ public class Maps {
 
         public String getLectureNo() {
             return lectureNo;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Code code = (Code) o;
+            return sectionNo.equals(code.sectionNo) && lectureNo.equals(code.lectureNo);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(sectionNo, lectureNo);
         }
 
         @Override
