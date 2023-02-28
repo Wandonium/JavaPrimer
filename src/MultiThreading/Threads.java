@@ -7,6 +7,11 @@ class MyCounter extends Thread {
         this.threadNo = threadNo;
     }
 
+    @Override
+    public void run() {
+        countMe();
+    }
+
     public void countMe() {
         for(int i=0; i<=9; i++) {
             try {
@@ -23,9 +28,12 @@ public class Threads {
         MyCounter counter1 = new MyCounter(1);
         MyCounter counter2 = new MyCounter(2);
         long startTime = System.currentTimeMillis();
-        counter1.countMe();
+        // use start() instead of run() to do something in
+        // a different thread. The run() method should be called by the JVM
+        //counter1.run();
+        counter1.start();
         System.out.println("*******************************");
-        counter2.countMe();
+        counter2.start();
         long endTime = System.currentTimeMillis();
         System.out.println("Time taken in milliseconds: " + (endTime - startTime));
     }
