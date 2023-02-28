@@ -45,14 +45,7 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Sets">
-    <configuration name="ComparableInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ComparableInterface" />
-      <module name="JavaPrimer" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SearchAndSort">
     <configuration name="Deques" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Collections.Deques" />
       <module name="JavaPrimer" />
@@ -92,6 +85,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchAndSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collections.SearchAndSort" />
+      <module name="JavaPrimer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Sets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Collections.Sets" />
       <module name="JavaPrimer" />
@@ -108,17 +114,17 @@
     <list>
       <item itemvalue="Application.Deques" />
       <item itemvalue="Application.Maps" />
+      <item itemvalue="Application.SearchAndSort" />
       <item itemvalue="Application.Queues" />
-      <item itemvalue="Application.ComparableInterface" />
       <item itemvalue="Application.Sets" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SearchAndSort" />
         <item itemvalue="Application.Sets" />
         <item itemvalue="Application.Maps" />
         <item itemvalue="Application.Deques" />
         <item itemvalue="Application.Queues" />
-        <item itemvalue="Application.ComparableInterface" />
       </list>
     </recent_temporary>
   </component>

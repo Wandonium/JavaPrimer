@@ -71,6 +71,7 @@ public class Sets {
         List<Data> list = new LinkedList<>();
         list.addAll(set);
         System.out.println("list: " + list);
+
     }
 
     public static void ObjectTreeSet() {
