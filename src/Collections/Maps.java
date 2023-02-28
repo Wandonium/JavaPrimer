@@ -6,6 +6,11 @@ import java.util.Map;
 
 public class Maps {
     public static void main(String[] args) {
+        //mapLooping();
+        mapDuplication();
+    }
+
+    public static void mapLooping() {
         Map<Integer, String> map = new HashMap<>();
         map.put(3, "Peter");
         map.put(1, "John");
@@ -28,5 +33,15 @@ public class Maps {
             Map.Entry<Integer, String> temp = entry.next();
             System.out.println("key: " + temp.getKey() + " value: " + temp.getValue());
         }
+    }
+
+    public static void mapDuplication() {
+        Map<Integer, String> map = new HashMap<>();
+        map.put(1, "one");
+        map.put(2, "two");
+        map.put(2, "mbili");
+        map.put(3, "three");
+        // notice the lack of duplication for keys
+        System.out.println("map: " + map);
     }
 }
