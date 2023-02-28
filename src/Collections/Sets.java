@@ -40,10 +40,13 @@ public class Sets {
         System.out.println("treeSet: " + treeSet);
 
         // Sets do not ignore duplicate objects:
-        ObjectSet();
+        //ObjectSet();
 
         // TreeSet with objects and Comparator
-        ObjectTreeSet();
+        //ObjectTreeSet();
+
+        // convert set to list
+        setToList();
     }
 
     public static void ObjectSet() {
@@ -55,6 +58,19 @@ public class Sets {
         // Notice how we do not ignore the duplicated new Data(3, "three")
         // because this is an object which has a different memory location
         System.out.println("set: " + set);
+    }
+    public static void setToList() {
+        Set<Data> set = new HashSet<>();
+        set.add(new Data(1, "one"));
+        set.add(new Data(2, "two"));
+        set.add(new Data(3, "three"));
+        set.add(new Data(3, "three"));
+        // Notice how we do not ignore the duplicated new Data(3, "three")
+        // because this is an object which has a different memory location
+        System.out.println("set: " + set);
+        List<Data> list = new LinkedList<>();
+        list.addAll(set);
+        System.out.println("list: " + list);
     }
 
     public static void ObjectTreeSet() {

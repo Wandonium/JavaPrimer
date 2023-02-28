@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="" />
+    <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Collections/Sets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/Sets.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +45,7 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Maps">
+  <component name="RunManager" selected="Application.Sets">
     <configuration name="ComparableInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ComparableInterface" />
       <module name="JavaPrimer" />
@@ -112,10 +114,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Sets" />
         <item itemvalue="Application.Maps" />
         <item itemvalue="Application.Deques" />
         <item itemvalue="Application.Queues" />
-        <item itemvalue="Application.Sets" />
         <item itemvalue="Application.ComparableInterface" />
       </list>
     </recent_temporary>
