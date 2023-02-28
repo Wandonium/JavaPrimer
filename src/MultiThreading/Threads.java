@@ -24,7 +24,7 @@ class MyCounter extends Thread {
     }
 }
 public class Threads {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         MyCounter counter1 = new MyCounter(1);
         MyCounter counter2 = new MyCounter(2);
         long startTime = System.currentTimeMillis();
@@ -34,6 +34,7 @@ public class Threads {
         counter1.start();
         System.out.println("*******************************");
         counter2.start();
+        Thread.sleep(4500); // insufficient sleep time
         long endTime = System.currentTimeMillis();
         System.out.println("Time taken in milliseconds: " + (endTime - startTime));
     }
