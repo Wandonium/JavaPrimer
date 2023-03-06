@@ -60,7 +60,8 @@ public class Threads {
 //        Thread.sleep(4500); // insufficient sleep time
 //        long endTime = System.currentTimeMillis();
 //        System.out.println("Time taken in milliseconds: " + (endTime - startTime));
-        runnableInterface();
+        //runnableInterface();
+        anonThread();
     }
 
     public static void runnableInterface() {
@@ -69,5 +70,22 @@ public class Threads {
         Thread thread2 = new Thread(new MyCounter2(2));
         thread1.start();
         thread2.start();
+    }
+
+    public static void anonThread() {
+        // creating Thread using an anonymous object
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for(int i=0;i<=9;i++) {
+                    try {
+                        Thread.sleep(500);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    System.out.println("i: " + i);
+                }
+            }
+        }).start();
     }
 }
