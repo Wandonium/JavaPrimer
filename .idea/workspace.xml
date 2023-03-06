@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/MultiThreading/Threads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiThreading/Threads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,20 +45,7 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Threads">
-    <configuration name="Deques" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Collections.Deques" />
-      <module name="JavaPrimer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Collections.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Synchronization">
     <configuration name="Maps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Collections.Maps" />
       <module name="JavaPrimer" />
@@ -98,6 +85,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Synchronization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MultiThreading.Synchronization" />
+      <module name="JavaPrimer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MultiThreading.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Threads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MultiThreading.Threads" />
       <module name="JavaPrimer" />
@@ -112,19 +112,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Deques" />
       <item itemvalue="Application.Maps" />
       <item itemvalue="Application.SearchAndSort" />
+      <item itemvalue="Application.Synchronization" />
       <item itemvalue="Application.Threads" />
       <item itemvalue="Application.Sets" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Synchronization" />
         <item itemvalue="Application.Threads" />
         <item itemvalue="Application.SearchAndSort" />
         <item itemvalue="Application.Sets" />
         <item itemvalue="Application.Maps" />
-        <item itemvalue="Application.Deques" />
       </list>
     </recent_temporary>
   </component>
