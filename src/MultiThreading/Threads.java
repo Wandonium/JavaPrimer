@@ -1,5 +1,7 @@
 package MultiThreading;
 
+import java.util.Random;
+
 class MyCounter extends Thread {
     private int threadNo;
 
@@ -33,7 +35,13 @@ class MyCounter2 implements Runnable {
 
     @Override
     public void run() {
+        Random random = new Random();
         for(int i=0; i<=9; i++) {
+            try {
+                Thread.sleep(random.nextInt(5000));
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             System.out.println("i: " + i + "\tthreadNo: " + threadNo);
         }
     }
