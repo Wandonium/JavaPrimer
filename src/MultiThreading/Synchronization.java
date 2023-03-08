@@ -27,6 +27,7 @@ public class Synchronization {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
         // Notice that both Threads edit counter hence this
         // statement might produce different results each time
         // so we need to synchronize the variable.
