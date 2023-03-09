@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/MultiThreading/Synchronization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiThreading/Synchronization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,7 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Synchronization">
+  <component name="RunManager" selected="Application.StaticSynchronization">
     <configuration name="BracketsProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DSA_Problems.BracketsProblem" />
       <module name="JavaPrimer" />
@@ -73,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Collections.Sets" />
+    <configuration name="StaticSynchronization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MultiThreading.StaticSynchronization" />
       <module name="JavaPrimer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Collections.*" />
+          <option name="PATTERN" value="MultiThreading.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,19 +113,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.StaticSynchronization" />
       <item itemvalue="Application.BracketsProblem" />
       <item itemvalue="Application.SearchAndSort" />
       <item itemvalue="Application.Synchronization" />
       <item itemvalue="Application.Threads" />
-      <item itemvalue="Application.Sets" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StaticSynchronization" />
         <item itemvalue="Application.Synchronization" />
         <item itemvalue="Application.BracketsProblem" />
         <item itemvalue="Application.Threads" />
         <item itemvalue="Application.SearchAndSort" />
-        <item itemvalue="Application.Sets" />
       </list>
     </recent_temporary>
   </component>
