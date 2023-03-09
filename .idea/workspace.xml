@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DSA_Problems/BracketsProblem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MultiThreading/Synchronization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiThreading/Synchronization.java" afterDir="false" />
     </list>
@@ -39,7 +38,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/wando/Documents/DSA_Plus_Big_O&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -47,7 +47,7 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BracketsProblem">
+  <component name="RunManager" selected="Application.Synchronization">
     <configuration name="BracketsProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DSA_Problems.BracketsProblem" />
       <module name="JavaPrimer" />
@@ -122,8 +122,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BracketsProblem" />
         <item itemvalue="Application.Synchronization" />
+        <item itemvalue="Application.BracketsProblem" />
         <item itemvalue="Application.Threads" />
         <item itemvalue="Application.SearchAndSort" />
         <item itemvalue="Application.Sets" />

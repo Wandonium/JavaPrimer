@@ -1,9 +1,38 @@
 package MultiThreading;
 
+class Brackets {
+    public void generate() {
+        for(int i=0; i<=10; i++) {
+            if(i<=5) {
+                System.out.print("[");
+            } else {
+                System.out.print("]");
+            }
+        }
+        System.out.println();
+    }
+}
 public class Synchronization {
     public static int counter = 0;
 
     public static void main(String[] args) {
+        problem();
+        generateBrackets();
+    }
+
+    public static void generateBrackets() {
+        Brackets brackets = new Brackets();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for(int i=1; i<=5; i++) {
+                    brackets.generate();
+                }
+            }
+        }).start();
+    }
+
+    public static void problem() {
         new Thread(new Runnable() {
             @Override
             public void run() {
