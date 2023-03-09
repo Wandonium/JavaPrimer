@@ -26,7 +26,11 @@ public class Synchronization {
             @Override
             public void run() {
                 for(int i=1; i<=5; i++) {
-                    brackets.generate();
+                    // use of synchronized method
+                    //brackets.generate();
+                    // Synchronization is for when two threads are accessing
+                    // the same object.
+                    new Brackets().generate();
                 }
             }
         }).start();
@@ -34,7 +38,11 @@ public class Synchronization {
             @Override
             public void run() {
                 for(int i=1; i<=5; i++) {
-                    brackets.generate();
+                    // use of synchronized method
+                    //brackets.generate();
+                    // Synchronization is for when two threads are accessing
+                    // the same object.
+                    new Brackets().generate();
                 }
             }
         }).start();
