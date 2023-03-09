@@ -1,7 +1,7 @@
 package MultiThreading;
 
 class Brackets {
-    public void generate() {
+    synchronized public void generate() {
         for(int i=0; i<=10; i++) {
             if(i<=5) {
                 System.out.print("[");
@@ -22,6 +22,14 @@ public class Synchronization {
 
     public static void generateBrackets() {
         Brackets brackets = new Brackets();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for(int i=1; i<=5; i++) {
+                    brackets.generate();
+                }
+            }
+        }).start();
         new Thread(new Runnable() {
             @Override
             public void run() {
