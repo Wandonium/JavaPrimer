@@ -1,10 +1,17 @@
 package MultiThreading;
 
 class Brackets {
+
+    private Object lock = "lock";
+
     //synchronized public void generate() {
     public void generate() {
         // synchronized block of code:
-        synchronized (this) {
+        //synchronized (this) {
+
+        // not very useful but highly recommended apparently
+        // use of synchronized object:
+        synchronized (lock) {
             for(int i=0; i<=10; i++) {
                 try {
                     Thread.sleep(10);
