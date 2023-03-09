@@ -25,25 +25,31 @@ public class Synchronization {
         new Thread(new Runnable() {
             @Override
             public void run() {
+                long startTime = System.currentTimeMillis();
                 for(int i=1; i<=5; i++) {
                     // use of synchronized method
-                    //brackets.generate();
+                    brackets.generate();
                     // Synchronization is for when two threads are accessing
                     // the same object.
-                    new Brackets().generate();
+                    //new Brackets().generate();
                 }
+                long endTime = System.currentTimeMillis();
+                System.out.println("Thread 1 duration: " + (endTime - startTime));
             }
         }).start();
         new Thread(new Runnable() {
             @Override
             public void run() {
+                long startTime = System.currentTimeMillis();
                 for(int i=1; i<=5; i++) {
                     // use of synchronized method
-                    //brackets.generate();
+                    brackets.generate();
                     // Synchronization is for when two threads are accessing
                     // the same object.
-                    new Brackets().generate();
+                    //new Brackets().generate();
                 }
+                long endTime = System.currentTimeMillis();
+                System.out.println("Thread 2 duration: " + (endTime - startTime));
             }
         }).start();
     }
