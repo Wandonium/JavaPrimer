@@ -4,20 +4,26 @@ public class WaitAndNotify {
     int balance = 0;
 
     public void withdraw(int amount) {
-        if(balance <= 0) {
-            try {
-                System.out.println("Waiting for balance update...");
-                // Causes the current thread to wait until it is awakened,
-                // typically by being notified (notify() method) or interrupted.
-                wait();
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+        // here this will be the obj object created in the main method below.
+        synchronized (this) {
+            if(balance <= 0) {
+                try {
+                    System.out.println("Waiting for balance update...");
+                    // Causes the current thread to wait until it is awakened,
+                    // typically by being notified (notify() method) or interrupted.
+                    //wait();
+                    // wait until either notify() method is called or the timeout
+                    // has elapsed
+                    wait(6000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
             }
         }
         // no need for the else block since execution won't reach this part
         // if balance is 0 because of the call to wait() method.
         balance = balance - amount;
-        System.out.println("Successfully withdrawed amount: " + amount);
+        System.out.println("Successfully withdrew amount: " + amount);
     }
 
     public void deposit(int amount) {
