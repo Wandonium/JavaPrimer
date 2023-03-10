@@ -29,6 +29,14 @@ public class WaitAndNotify {
     public void deposit(int amount) {
         System.out.println("Depositing the amount: " + amount);
         balance += amount;
+        // making use of synchronized block for the notify() and notifyAll() method calls
+        synchronized (this) {
+            // Difference between the two: notify() wakes up the longest waiting thread or the
+            // thread with the highest priority while notifyAll() wakes up all the threads that
+            // are waiting
+            //notifyAll();
+            notify();
+        }
     }
 
     public static void main(String[] args) {
