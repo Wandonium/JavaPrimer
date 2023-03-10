@@ -46,13 +46,13 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WaitAndNotify">
-    <configuration name="BracketsProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DSA_Problems.BracketsProblem" />
+  <component name="RunManager" selected="Application.Interrupts">
+    <configuration name="Interrupts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MultiThreading.Interrupts" />
       <module name="JavaPrimer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DSA_Problems.*" />
+          <option name="PATTERN" value="MultiThreading.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,19 +113,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Interrupts" />
       <item itemvalue="Application.StaticSynchronization" />
       <item itemvalue="Application.VolatileKeyword" />
       <item itemvalue="Application.WaitAndNotify" />
-      <item itemvalue="Application.BracketsProblem" />
       <item itemvalue="Application.Synchronization" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Interrupts" />
         <item itemvalue="Application.WaitAndNotify" />
         <item itemvalue="Application.VolatileKeyword" />
         <item itemvalue="Application.StaticSynchronization" />
         <item itemvalue="Application.Synchronization" />
-        <item itemvalue="Application.BracketsProblem" />
       </list>
     </recent_temporary>
   </component>

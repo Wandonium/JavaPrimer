@@ -24,6 +24,7 @@ public class WaitAndNotify {
         // if balance is 0 because of the call to wait() method.
         balance = balance - amount;
         System.out.println("Successfully withdrew amount: " + amount);
+        System.out.println("Current balance: " + balance);
     }
 
     public void deposit(int amount) {
@@ -56,7 +57,7 @@ public class WaitAndNotify {
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
-                obj.deposit(2000);
+                obj.deposit(4554);
             }
         }).start();
     }
