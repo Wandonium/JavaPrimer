@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="17345a23-3d77-4a98-a9b8-d7c56b3eb413" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +44,7 @@
       <recent name="OOP.inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.VolatileKeyword">
+  <component name="RunManager" selected="Application.WaitAndNotify">
     <configuration name="BracketsProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DSA_Problems.BracketsProblem" />
       <module name="JavaPrimer" />
@@ -86,8 +84,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Threads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultiThreading.Threads" />
+    <configuration name="VolatileKeyword" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MultiThreading.VolatileKeyword" />
       <module name="JavaPrimer" />
       <extension name="coverage">
         <pattern>
@@ -99,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VolatileKeyword" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultiThreading.VolatileKeyword" />
+    <configuration name="WaitAndNotify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MultiThreading.WaitAndNotify" />
       <module name="JavaPrimer" />
       <extension name="coverage">
         <pattern>
@@ -115,17 +113,17 @@
     <list>
       <item itemvalue="Application.StaticSynchronization" />
       <item itemvalue="Application.VolatileKeyword" />
+      <item itemvalue="Application.WaitAndNotify" />
       <item itemvalue="Application.BracketsProblem" />
       <item itemvalue="Application.Synchronization" />
-      <item itemvalue="Application.Threads" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WaitAndNotify" />
         <item itemvalue="Application.VolatileKeyword" />
         <item itemvalue="Application.StaticSynchronization" />
         <item itemvalue="Application.Synchronization" />
         <item itemvalue="Application.BracketsProblem" />
-        <item itemvalue="Application.Threads" />
       </list>
     </recent_temporary>
   </component>
