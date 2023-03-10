@@ -11,16 +11,18 @@ public class Interrupts {
                     System.out.println("Waiting for balance update...");
                     wait(6000);
                 } catch (InterruptedException e) {
-                    System.out.println("Thread got interrupted");
-                    return;
+                    // Making use of the interrupt method to do stuff when balance > 0
+                    balance = balance - amount;
+                    System.out.println("Successfully withdrew amount: " + amount);
+                    System.out.println("Current balance: " + balance);
                 }
             }
         }
-        // no need for the else block since execution won't reach this part
-        // if balance is 0 because of the call to wait() method.
-        balance = balance - amount;
-        System.out.println("Successfully withdrew amount: " + amount);
-        System.out.println("Current balance: " + balance);
+    }
+
+    public void deposit(int amount) {
+        System.out.println("Depositing the amount: " + amount);
+        balance += amount;
     }
 
     public static void main(String[] args) {
@@ -32,13 +34,25 @@ public class Interrupts {
             }
         });
         thread.start();
-        if(balance <= 0) {
+        /*if(balance <= 0) {
             try {
                 Thread.sleep(3000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
             thread.interrupt();
-        }
+        }*/
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                obj.deposit(4554);
+                thread.interrupt();
+            }
+        }).start();
     }
 }
