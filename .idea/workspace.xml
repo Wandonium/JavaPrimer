@@ -47,7 +47,7 @@
       <recent name="MultiThreading" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Interrupts">
+  <component name="RunManager" selected="Application.Join">
     <configuration name="Interrupts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MultiThreading.Interrupts" />
       <module name="JavaPrimer" />
@@ -61,8 +61,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaticSynchronization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultiThreading.StaticSynchronization" />
+    <configuration name="Join" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MultiThreading.Join" />
       <module name="JavaPrimer" />
       <extension name="coverage">
         <pattern>
@@ -74,8 +74,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Synchronization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultiThreading.Synchronization" />
+    <configuration name="StaticSynchronization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MultiThreading.StaticSynchronization" />
       <module name="JavaPrimer" />
       <extension name="coverage">
         <pattern>
@@ -114,19 +114,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Join" />
       <item itemvalue="Application.Interrupts" />
       <item itemvalue="Application.StaticSynchronization" />
       <item itemvalue="Application.VolatileKeyword" />
       <item itemvalue="Application.WaitAndNotify" />
-      <item itemvalue="Application.Synchronization" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Join" />
         <item itemvalue="Application.Interrupts" />
         <item itemvalue="Application.WaitAndNotify" />
         <item itemvalue="Application.VolatileKeyword" />
         <item itemvalue="Application.StaticSynchronization" />
-        <item itemvalue="Application.Synchronization" />
       </list>
     </recent_temporary>
   </component>
