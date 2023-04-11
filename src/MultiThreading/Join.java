@@ -5,16 +5,25 @@ public class Join {
 
     public static void main(String[] args) {
         Join join = new Join();
-        new Thread(new Runnable() {
+        Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                for(int i = 0; i <= 1000; i++) {
+                for(int i = 0; i < 1000; i++) {
                     join.counter++;
                 }
             }
-        }).start();
-        try {
+        });
+        thread1.start();
+        /*try {
             Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }*/
+        // using the join method to synchronize two threads:
+        try {
+            // main thread will now wait for thread1 to finish executing
+            // before moving forward.
+            thread1.join();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
