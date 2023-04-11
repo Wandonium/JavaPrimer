@@ -13,20 +13,36 @@ public class Join {
                 }
             }
         });
+        //thread1.start();
+        Thread thread2 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    thread1.join();
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                for(int i = 0; i < 1000; i++) {
+                    join.counter++;
+                }
+            }
+        });
         thread1.start();
-        /*try {
-            Thread.sleep(1000);
+        thread2.start();
+        try {
+            //Thread.sleep(2000);
+            thread2.join();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        }*/
+        }
         // using the join method to synchronize two threads:
-        try {
+        /*try {
             // main thread will now wait for thread1 to finish executing
             // before moving forward.
             thread1.join();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        }
+        }*/
         System.out.println("Counter: " + join.counter);
     }
 }
