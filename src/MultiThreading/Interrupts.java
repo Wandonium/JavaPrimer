@@ -11,6 +11,7 @@ public class Interrupts {
                     System.out.println("Waiting for balance update...");
                     wait(6000);
                 } catch (InterruptedException e) {
+                    System.out.println("Original balance: " + balance);
                     // Making use of the interrupt method to do stuff when balance > 0
                     balance = balance - amount;
                     System.out.println("Successfully withdrew amount: " + amount);

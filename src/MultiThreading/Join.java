@@ -31,7 +31,11 @@ public class Join {
         thread2.start();
         try {
             //Thread.sleep(2000);
-            thread2.join();
+            //thread2.join();
+            // we can also use this version of join with the given milliseconds.
+            // this version will wait for the given milliseconds or until thread2 finishes
+            // executing before returning to the main thread
+            thread2.join(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
