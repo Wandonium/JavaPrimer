@@ -43,5 +43,8 @@ public class ThreadPool {
         executorService.execute(t3);
         executorService.execute(t4);
         executorService.execute(t5);
+
+        // Always remember to shutdown the executor service.
+        executorService.shutdown();
     }
 }
