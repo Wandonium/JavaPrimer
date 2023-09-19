@@ -21,11 +21,11 @@ class SomeThread extends Thread {
 public class MyCountDownLatch {
     public static void main(String[] args) {
         // Create a CountDown latch with a count of 4
-        //CountDownLatch latch = new CountDownLatch(4);
+        CountDownLatch latch = new CountDownLatch(4);
         // Using a count of 3 will still terminate the program:
-        //CountDownLatch latch = new CountDownLatch(3);
+        // CountDownLatch latch = new CountDownLatch(3);
         // But using a count of 5 will make the program run infinitely:
-        CountDownLatch latch = new CountDownLatch(5);
+        // CountDownLatch latch = new CountDownLatch(5);
         SomeThread thread1 = new SomeThread(latch);
         SomeThread thread2 = new SomeThread(latch);
         SomeThread thread3 = new SomeThread(latch);
