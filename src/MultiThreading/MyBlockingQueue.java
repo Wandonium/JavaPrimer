@@ -36,7 +36,7 @@ class Consumer implements Runnable {
     public void run() {
         while(true) {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(5000);
                 queue.take();
                 MyBlockingQueue.counter--;
                 System.out.println("Value removed in queue: " + MyBlockingQueue.counter);
@@ -53,6 +53,7 @@ public class MyBlockingQueue {
 
     static int counter = 0;
     public static void main(String[] args) {
+        // ArrayBlockingQueue is a Thread-Safe collection.
         ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);
         Producer producer = new Producer(queue);
         Thread producerThread = new Thread(producer);
