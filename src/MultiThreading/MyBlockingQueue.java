@@ -55,9 +55,13 @@ public class MyBlockingQueue {
     public static void main(String[] args) {
         ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);
         Producer producer = new Producer(queue);
-        Thread produceThread = new Thread(producer);
+        Thread producerThread = new Thread(producer);
         // Runs until the queue has reached it's capacity i.e 10 and 
         // then blocks/stops the execution until the queue has capacity again.
-        produceThread.start();
+        producerThread.start();
+
+        Consumer consumer = new Consumer(queue);
+        Thread consumerThread = new Thread(consumer);
+        consumerThread.start();
     }
 }
