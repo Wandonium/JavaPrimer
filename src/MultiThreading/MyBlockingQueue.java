@@ -25,6 +25,30 @@ class Producer implements Runnable {
 
     
 }
+class Consumer implements Runnable {
+    private ArrayBlockingQueue<Integer> queue;
+
+    public Consumer(ArrayBlockingQueue<Integer> queue) {
+        this.queue = queue;
+    }
+
+    @Override
+    public void run() {
+        while(true) {
+            try {
+                Thread.sleep(1000);
+                queue.take();
+                MyBlockingQueue.counter--;
+                System.out.println("Value removed in queue: " + MyBlockingQueue.counter);
+                System.out.println("Array blocking queue: " + queue);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    
+}
 public class MyBlockingQueue {
 
     static int counter = 0;
@@ -32,6 +56,8 @@ public class MyBlockingQueue {
         ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);
         Producer producer = new Producer(queue);
         Thread produceThread = new Thread(producer);
+        // Runs until the queue has reached it's capacity i.e 10 and 
+        // then blocks/stops the execution until the queue has capacity again.
         produceThread.start();
     }
 }
