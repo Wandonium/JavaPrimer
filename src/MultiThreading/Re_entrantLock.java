@@ -1,22 +1,34 @@
 package MultiThreading;
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 public class Re_entrantLock {
     static int counter = 0;
+    // add the Reentrant lock
+    static Lock lock = new ReentrantLock();
     public static void main(String[] args) throws InterruptedException {
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                for(int i = 0; i < 1000; i++) {
+                // lock execution here until for loop completes. No other thread
+                // will be able to execute until we unlock.
+                lock.lock();
+                for(int i = 0; i <= 1000; i++) {
                     Re_entrantLock.counter++;
                 }
+                lock.unlock();
             }
         });
         Thread thread2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                for(int i = 0; i < 1000; i++) {
+                // lock execution here until for loop completes.
+                lock.lock();
+                for(int i = 0; i <= 500; i++) {
                     Re_entrantLock.counter++;
                 }
+                lock.unlock();
             }
         });
         thread1.start();
