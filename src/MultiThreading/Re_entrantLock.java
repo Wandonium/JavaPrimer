@@ -14,10 +14,16 @@ public class Re_entrantLock {
                 // lock execution here until for loop completes. No other thread
                 // will be able to execute until we unlock.
                 lock.lock();
-                for(int i = 0; i <= 1000; i++) {
-                    Re_entrantLock.counter++;
+                // add try-finally block just in case there is an exception in 
+                // the code we locked. This is to avoid a scenario where we never
+                // unlock.
+                try {
+                    for(int i = 0; i <= 1000; i++) {
+                        Re_entrantLock.counter++;
+                    }
+                } finally {
+                    lock.unlock();
                 }
-                lock.unlock();
             }
         });
         Thread thread2 = new Thread(new Runnable() {
