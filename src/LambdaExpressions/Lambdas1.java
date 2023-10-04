@@ -8,6 +8,8 @@ interface Lambda {
     // public void demo2(int x);
 }
 
+interface Lambda2 { public int demo(); }
+
 public class Lambdas1 {
     public static void main(String[] args) {
         Lambda lambda = new Lambda() {
@@ -30,6 +32,10 @@ public class Lambdas1 {
             System.out.println("Inside demo method 2...");
         };
         lambda3.demo();
+
+        Lambda2 lambda4 = ()->10;
+        System.out.println("Lambda expresion that returns a value: " + lambda4.demo());
+        
 
         // Runnable interface is a functional interface so it's perfect for lambda expressions
         Thread t1 = new Thread(new Runnable() {
