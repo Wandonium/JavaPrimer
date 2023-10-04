@@ -1,5 +1,6 @@
 package MultiThreading;
 
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -10,23 +11,68 @@ public class MyDeadlock2 {
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                lock1.lock();
-                System.out.println("Inside thread 1 lock 1");
-                lock2.lock();
-                System.out.println("Inside thread 1 lock 2");
-                lock2.unlock();
-                lock1.unlock();
+                boolean flagLock1 = false;
+                boolean flagLock2 = false;
+                while(true) {
+                    try {
+                        flagLock1 = lock1.tryLock(10, TimeUnit.MILLISECONDS);
+                        flagLock2 = lock2.tryLock(10, TimeUnit.MILLISECONDS);
+                    } catch(InterruptedException e) {
+                        e.printStackTrace();
+                    }finally {
+                        if(flagLock1) {
+                            System.out.println("Inside thread 1 lock 1");
+                            lock1.unlock();
+                        }
+                        if(flagLock2) {
+                            System.out.println("Inside thread 1 lock 2");
+                            lock2.unlock();
+                        }
+                        if(flagLock1 && flagLock2) {
+                            break;
+                        }
+                    }
+                }
+
+                // lock1.lock();
+                // System.out.println("Inside thread 1 lock 1");
+                // lock2.lock();
+                // System.out.println("Inside thread 1 lock 2");
+                // lock2.unlock();
+                // lock1.unlock();
             }
         });
         Thread thread2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                lock2.lock();
+                boolean flagLock1 = false;
+                boolean flagLock2 = false;
+                while(true) {
+                    try {
+                        flagLock1 = lock1.tryLock(10, TimeUnit.MILLISECONDS);
+                        flagLock2 = lock2.tryLock(10, TimeUnit.MILLISECONDS);
+                    } catch(InterruptedException e) {
+                        e.printStackTrace();
+                    } finally {
+                        if(flagLock2) {
+                            System.out.println("Inside thread 2 lock 2");
+                            lock2.unlock();
+                        }
+                        if(flagLock1) {
+                            System.out.println("Inside thread 2 lock 1");
+                            lock1.unlock();
+                        }
+                        if(flagLock1 && flagLock2) {
+                            break;
+                        }
+                    }
+                }
+                /* lock2.lock();
                 System.out.println("Inside thread 2 lock 2");
                 lock1.lock();
                 System.out.println("Inside thread 2 lock 1");
                 lock2.unlock();
-                lock1.unlock();
+                lock1.unlock(); */
             }
         });
 
