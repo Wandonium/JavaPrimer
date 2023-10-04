@@ -40,5 +40,9 @@ public class Lambdas1 {
         });
         Thread t2 = new Thread(()->System.out.println("Runnable interface using lambda expression"));
         t1.start(); t2.start();
+        new Thread(()->{
+            System.out.println("Runnable interface multiple statements");
+            System.out.println("Runnable interface lambda expression multiple stmts");
+        }).start();
     }    
 }
