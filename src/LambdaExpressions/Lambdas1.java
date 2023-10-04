@@ -7,13 +7,16 @@ interface Lambda {
 public class Lambdas1 {
     public static void main(String[] args) {
         Lambda lambda = new Lambda() {
-            
+
             @Override
             public void demo() {
-                // TODO Auto-generated method stub
-                throw new UnsupportedOperationException("Unimplemented method 'demo'");
+                System.out.println("Inside the demo method of the Lambda interface...");
             }
             
         };
+        lambda.demo();
+
+        Lambda lambda2 = ()->System.out.println("Inside demo method of Lambda interface using lambda expression...");
+        lambda2.demo();
     }    
 }
