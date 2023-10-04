@@ -39,7 +39,14 @@ public class Lambdas2 {
         }); */
         
         // Sort list of names using Lambda expression with Comparator interface
-        Collections.sort(list, (Data o1, Data o2)->o1.getName().compareTo(o2.getName()));
+        // Collections.sort(list, (Data o1, Data o2)->o1.getName().compareTo(o2.getName()));
+
+        // Sorting by length of the name:
+        Collections.sort(list, (Data o1, Data o2)->{
+            if(o1.getName().length() > o2.getName().length()) return 1;
+            else if(o1.getName().length() > o2.getName().length()) return -1;
+            else return 0;
+        });
         for(Data d: list) {
             System.out.println(d.getName());
         }
