@@ -30,5 +30,15 @@ public class Lambdas1 {
             System.out.println("Inside demo method 2...");
         };
         lambda3.demo();
+
+        // Runnable interface is a functional interface so it's perfect for lambda expressions
+        Thread t1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Runnable interface is a functional interface...");
+            }
+        });
+        Thread t2 = new Thread(()->System.out.println("Runnable interface using lambda expression"));
+        t1.start(); t2.start();
     }    
 }
